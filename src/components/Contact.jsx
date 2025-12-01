@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Mail, Phone, Linkedin, Github, MapPin, Loader2, Send } from 'lucide-react';
-// import emailjs from '@emailjs/browser'; // Uncomment when ready to use
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ personalInfo }) => {
   const form = useRef();
