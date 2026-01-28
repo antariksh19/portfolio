@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Code } from 'lucide-react';
+import { Globe, Code, Award } from 'lucide-react';
 
 const TimelineItem = ({ role, org, desc, year }) => (
   <div className="relative pl-8 border-l border-white/10 hover:border-cyan-500 transition-colors group">
@@ -22,11 +22,10 @@ const Experience = () => {
     <>
       <section id="experience" className="py-32 px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3"><Globe className="text-cyan-500" /> Leadership Journey</h2>
+          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3"><Globe className="text-cyan-500" /> Position of Responsibility</h2>
           <div className="space-y-12">
-            <TimelineItem role="Designing Lead" org="Tech Fest" desc="Spearheaded the visual design and branding strategies for the college fest." year="2024" />
-            <TimelineItem role="Media Lead" org="Xplore Coding Club" desc="Contributed to the execution and marketing of coding competitions." year="2023" />
-            <TimelineItem role="Designing Lead" org="Student Media Cell" desc="Produced high-impact visual content to support marketing campaigns." year="2023" />
+            <TimelineItem role="Designing Lead" org="Tech Fest" desc="Spearheaded the visual design and branding strategies for the college fest, overseeing digital and print media." year="2024" />
+            <TimelineItem role="Media Lead" org="Xplore Coding Club" desc="Contributed to the execution and marketing of coding competitions and technical initiatives." year="2023" />
           </div>
         </div>
       </section>
@@ -35,10 +34,18 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 flex items-center gap-3"><Code className="text-purple-500" /> Education</h2>
           <div className="grid gap-6">
-            <EducationCard school="XIM University" degree="B.Tech in CSE" year="2023 – 2027" score="CGPA: 7.43" />
-            <EducationCard school="Future Bhubaneswar School" degree="Class XII" year="2023" score="81.00%" />
-            <EducationCard school="ODM Public School" degree="Class X" year="2021" score="88.00%" />
+            <EducationCard school="XIM University" degree="B.Tech in Computer Science & Engineering" year="2023 – 2027" score="CGPA: 6.62" />
+            <EducationCard school="Future Bhubaneswar School" degree="Higher Secondary (Class XII)" year="2021 - 2023" score="81.00%" />
+            <EducationCard school="ODM Public School" degree="High School (Class X)" year="2008 - 2021" score="88.00%" />
           </div>
+          
+           <div className="mt-12">
+            <h2 className="text-xl font-bold mb-6 flex items-center gap-3"><Award className="text-yellow-500" /> Certifications</h2>
+            <a href="https://drive.google.com/file/d/1QDpkV2U5h3iAzaviyLp2JokL14H34Bgj/view?usp=sharing" target="_blank" rel="noreferrer" className="block p-4 border border-white/10 rounded-xl hover:border-cyan-500/50 transition-colors bg-white/[0.02]">
+                <span className="text-white font-bold">Delta (Full Stack Web Development)</span>
+                <span className="text-slate-500 text-sm ml-2">- Apna College</span>
+            </a>
+           </div>
         </div>
       </section>
     </>

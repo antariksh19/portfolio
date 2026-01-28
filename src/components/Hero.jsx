@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import { TypeAnimation } from 'react-type-animation';
-import { Download, ChevronRight, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, ChevronRight, Sparkles, Github, Linkedin, Mail, Code } from 'lucide-react';
 
 const Hero = ({ personalInfo }) => {
   return (
     <section id="about" className="relative pt-32 pb-20 px-6 min-h-screen flex items-center justify-center overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
         
-        {/* TEXT */}
+        {/* TEXT CONTENT */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="z-10 order-2 lg:order-1">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-md shadow-xl">
             <Sparkles size={14} className="text-yellow-400 animate-pulse" />
@@ -25,7 +25,12 @@ const Hero = ({ personalInfo }) => {
             <span className="text-cyan-500 mr-3">&gt;</span>
             <span className="text-white">
               <TypeAnimation 
-                sequence={['Computer Science Engineer', 2000, 'Design Lead', 2000, 'Full Stack Developer', 2000]} 
+                sequence={[
+                  'Computer Science Engineer', 2000, 
+                  'Design Lead @ Tech Fest', 2000, 
+                  'Full Stack Developer', 2000,
+                  'Creative Thinker', 2000
+                ]} 
                 wrapper="span" speed={50} repeat={Infinity} 
               />
             </span>
@@ -50,7 +55,7 @@ const Hero = ({ personalInfo }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
             <div className="relative bg-[#0a0a0a]/90 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
               <div className="h-96 bg-slate-800 relative overflow-hidden group">
-                <img src="/profile.png" alt="Profile" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => {e.target.style.display='none'; e.target.nextSibling.style.display='flex'}} />
+                <img src="/profile.png" alt="Profile" className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" onError={(e) => {e.target.style.display='none'; e.target.nextSibling.style.display='flex'}} />
                 <div className="absolute inset-0 hidden flex-col items-center justify-center bg-slate-800 text-slate-500"><span className="text-6xl mb-4">👨‍💻</span><p>Add profile.png</p></div>
               </div>
               <div className="p-6 relative z-10 -mt-20">
@@ -60,6 +65,7 @@ const Hero = ({ personalInfo }) => {
                   {[
                     { href: personalInfo.github, icon: <Github size={20} /> },
                     { href: personalInfo.linkedin, icon: <Linkedin size={20} /> },
+                    { href: personalInfo.leetcode, icon: <Code size={20} /> }, // Added LeetCode Here
                     { href: `mailto:${personalInfo.email}`, icon: <Mail size={20} /> }
                   ].map((s, i) => (
                     <a key={i} href={s.href} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all">{s.icon}</a>

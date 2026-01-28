@@ -19,10 +19,10 @@ const Skills = () => {
           <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full"></div>
         </motion.div>
         <div className="grid md:grid-cols-4 gap-6">
-          <SkillCard icon={<Layout />} title="Frontend" skills={["React.js", "Tailwind CSS", "JavaScript", "Bootstrap"]} color="text-cyan-400" />
-          <SkillCard icon={<Server />} title="Backend" skills={["Node.js", "Express.js", "PHP", "XML"]} color="text-purple-400" />
-          <SkillCard icon={<Database />} title="Database" skills={["MySQL", "MongoDB"]} color="text-green-400" />
-          <SkillCard icon={<Cpu />} title="Languages" skills={["Java", "Python", "C", "HTML/CSS"]} color="text-yellow-400" />
+          <SkillCard icon={<Layout />} title="Frontend & Mobile" skills={["Next.js", "React.js", "Jetpack Compose", "Tailwind CSS"]} color="text-cyan-400" />
+          <SkillCard icon={<Server />} title="Backend" skills={["Node.js", "Express.js", "Django", "Flask"]} color="text-purple-400" />
+          <SkillCard icon={<Database />} title="Database & Cloud" skills={["MongoDB", "MySQL", "Firebase", "SQLite"]} color="text-green-400" />
+          <SkillCard icon={<Cpu />} title="Languages" skills={["Java", "Python", "Kotlin", "C"]} color="text-yellow-400" />
         </div>
       </div>
     </section>
