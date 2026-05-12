@@ -34,7 +34,7 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 flex items-center gap-3"><Code className="text-purple-500" /> Education</h2>
           <div className="grid gap-6">
-            <EducationCard school="XIM University" degree="B.Tech in Computer Science & Engineering" year="2023 – 2027" score="CGPA: 6.62" />
+            <EducationCard school="XIM University" degree="B.Tech in Computer Science & Engineering" year="2023 – 2027" score="CGPA: 7.02" />
             <EducationCard school="Future Bhubaneswar School" degree="Higher Secondary (Class XII)" year="2021 - 2023" score="81.00%" />
             <EducationCard school="ODM Public School" degree="High School (Class X)" year="2008 - 2021" score="88.00%" />
           </div>
