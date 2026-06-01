@@ -54,18 +54,25 @@ const Experience = () => {
            <div className="mt-12">
             <h2 className="text-xl font-bold mb-6 flex items-center gap-3"><Award className="text-yellow-500" /> Certifications</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="p-4 border border-white/10 rounded-xl bg-white/[0.02]">
-                  <span className="text-white font-bold block mb-1">Delta (Full Stack Web Development)</span>
+              
+              {/* DELTA CERTIFICATE - Actual Link Added */}
+              <a href="https://drive.google.com/file/d/1QDpkV2U5h3iAzaviyLp2JokL14H34Bgj/view?usp=sharing" target="_blank" rel="noreferrer" className="block p-4 border border-white/10 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] hover:border-cyan-500/50 transition-all group cursor-pointer">
+                  <span className="text-white font-bold block mb-1 group-hover:text-cyan-400 transition-colors">Delta (Full Stack Web Development)</span>
                   <span className="text-slate-500 text-sm">Apna College</span>
-              </div>
-              <div className="p-4 border border-white/10 rounded-xl bg-white/[0.02]">
-                  <span className="text-white font-bold block mb-1">Data Analytics with Python</span>
+              </a>
+
+              {/* NPTEL CERTIFICATE - Add your link in the href="#" */}
+              <a href="#" target="_blank" rel="noreferrer" className="block p-4 border border-white/10 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] hover:border-cyan-500/50 transition-all group cursor-pointer">
+                  <span className="text-white font-bold block mb-1 group-hover:text-cyan-400 transition-colors">Data Analytics with Python</span>
                   <span className="text-slate-500 text-sm">NPTEL</span>
-              </div>
-              <div className="p-4 border border-white/10 rounded-xl bg-white/[0.02]">
-                  <span className="text-white font-bold block mb-1">OWASP SAMM Fundamentals</span>
+              </a>
+
+              {/* OWASP CERTIFICATE - Add your link in the href="#" */}
+              <a href="#" target="_blank" rel="noreferrer" className="block p-4 border border-white/10 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] hover:border-cyan-500/50 transition-all group cursor-pointer">
+                  <span className="text-white font-bold block mb-1 group-hover:text-cyan-400 transition-colors">OWASP SAMM Fundamentals</span>
                   <span className="text-slate-500 text-sm">Security Protocols</span>
-              </div>
+              </a>
+
             </div>
            </div>
         </div>
