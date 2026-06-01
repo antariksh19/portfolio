@@ -64,11 +64,11 @@ const Projects = () => {
           />
           
           <ProjectCard 
-            title="Stegano-web" 
-            desc="Secure image steganography tool to conceal AES-256-GCM encrypted messages using LSB manipulation logic in Python." 
-            tags={["Python", "React", "Cryptography"]} 
-            link="https://github.com/antariksh19/stegano-web"
-            icon={Lock} // LOCK ICON
+            title="STEGANO-VAULT" 
+            desc="Built a secure web application to conceal AES-256-GCM encrypted textual data into images using advanced LSB steganography and a custom 32-bit header." 
+            tags={["Python", "React", "LSB", "AES-256"]} 
+            link="https://stegano-web.vercel.app/"
+            icon={Lock} 
           />
           
            <ProjectCard 

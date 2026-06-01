@@ -20,11 +20,11 @@ const Portfolio = () => {
   // --- UPDATED PERSONAL INFO FROM RESUME ---
   const personalInfo = {
     name: "Antariksh Mohapatra",
-    role: "Computer Science Undergraduate",
+    role: "Software Engineering Intern", 
     location: "Bhubaneswar, India",
     email: "antariksh19m@gmail.com",
-    phone: "+91 977642505",
-    linkedin: "https://www.linkedin.com/in/antariksh-mohapatra/",
+    phone: "+91-9776412505", 
+    linkedin: "https://www.linkedin.com/in/antariksh19m", 
     github: "https://github.com/antariksh19",
     leetcode: "https://leetcode.com/u/antariksh19m/"
   };

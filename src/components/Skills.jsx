@@ -19,9 +19,9 @@ const Skills = () => {
           <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full"></div>
         </motion.div>
         <div className="grid md:grid-cols-4 gap-6">
-          <SkillCard icon={<Layout />} title="Frontend & Mobile" skills={["Next.js", "React.js", "Jetpack Compose", "Tailwind CSS"]} color="text-cyan-400" />
-          <SkillCard icon={<Server />} title="Backend" skills={["Node.js", "Express.js", "Django", "Flask"]} color="text-purple-400" />
-          <SkillCard icon={<Database />} title="Database & Cloud" skills={["MongoDB", "MySQL", "Firebase", "SQLite"]} color="text-green-400" />
+          <SkillCard icon={<Layout />} title="Frontend & Mobile" skills={["Next.js", "React.js", "Jetpack Compose", "HTML/CSS"]} color="text-cyan-400" />
+          <SkillCard icon={<Server />} title="Backend & Tools" skills={["Node.js", "Django", "Flask", "Copilot"]} color="text-purple-400" />
+          <SkillCard icon={<Database />} title="Database & Cloud" skills={["MongoDB", "Firebase", "AWS", "Google Cloud", "Oracle Cloud"]} color="text-green-400" />
           <SkillCard icon={<Cpu />} title="Languages" skills={["Java", "Python", "Kotlin", "C"]} color="text-yellow-400" />
         </div>
       </div>
