@@ -45,10 +45,17 @@ const Contact = ({ personalInfo }) => {
         {/* LEFT SIDE: Contact Info */}
         <div>
           <h2 id="contact-heading" className="text-4xl font-bold mb-8">Let's <span className="text-cyan-500">Connect.</span></h2>
-          <p className="text-slate-400 mb-8 text-lg">Looking for new opportunities. My inbox is always open!</p>
+          <p className="text-slate-400 mb-8 text-lg leading-relaxed">
+            I'm actively seeking Software Engineering Internships,
+            AI Engineering opportunities, Cloud Engineering roles,
+            and ambitious technical collaborations.
+
+            Whether you're hiring, building a startup, or looking
+            for a technical partner, I'd love to connect and build
+            something meaningful together.
+          </p>
           <div className="space-y-4">
             <ContactLink href={`mailto:${personalInfo.email}`} icon={<Mail />} text={personalInfo.email} />
-            <ContactLink href={`tel:${personalInfo.phone}`} icon={<Phone />} text={personalInfo.phone} />
             <ContactLink href={personalInfo.linkedin} icon={<Linkedin />} text="LinkedIn" />
             <ContactLink href={personalInfo.github} icon={<Github />} text="GitHub" />
             <ContactLink href={personalInfo.leetcode} icon={<Code />} text="LeetCode" />

@@ -40,7 +40,12 @@ export const heroContent = {
 };
 
 export const metrics = {
-  projectsBuilt: { value: 50, suffix: '+', label: 'Projects Built', shortLabel: 'Projects' },
+  projectsBuilt: {
+    value: 15,
+    suffix: '+',
+    label: 'Projects Built',
+    shortLabel: 'Projects'
+  }
   leetcodeProblems: { value: 250, suffix: '+', label: 'LeetCode Problems', shortLabel: 'LeetCode Problems' },
   yearsCoding: { value: 4, suffix: '+', label: 'Years Coding', shortLabel: 'Years Coding' },
   /** Technologies Used — count derived from skills.js at runtime when needed */
@@ -57,6 +62,7 @@ export const about = {
     'Cloud platforms: AWS, Google Cloud, Oracle Cloud, Firebase',
     'Security-minded engineering (OWASP SAMM, cryptography, steganography)',
     'Strong DSA foundation with 250+ LeetCode problems solved',
+    'Strong foundation in Data Structures, Algorithms, and System Design',
   ],
   positioning:
     'Software Engineer building AI-powered applications, cloud infrastructure, and scalable developer tools.',

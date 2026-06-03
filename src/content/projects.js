@@ -59,13 +59,10 @@ export const projects = [
     ],
 
     outcomes: [
-
-      'Cuts initial site scaffolding from hours to minutes for typical landing pages',
-
-      'Demonstrates production-grade AI integration—not a single-shot demo script',
-
-      'Validates guardrails for repeatable UI output suitable for Vercel deploy',
-
+      'Reduced landing page setup from hours to minutes',
+      'Generated deployable React and Next.js code',
+      'Integrated Gemini and Groq for structured content generation',
+      'Demonstrated production-ready AI workflow automation'
     ],
 
     impact: [
@@ -90,7 +87,7 @@ export const projects = [
 
     demo: 'https://ai-websitebuilder.vercel.app/',
 
-    github: '',
+    github: 'https://github.com/antariksh19/ai-builder.git',
 
   },
 
@@ -184,7 +181,7 @@ export const projects = [
 
     demo: 'https://stegano-web.vercel.app/',
 
-    github: '',
+    github: 'https://github.com/antariksh19/stegano-web.git',
 
   },
 
@@ -247,13 +244,10 @@ export const projects = [
     ],
 
     outcomes: [
-
-      'End-to-end mobile product: auth, sync, notifications—not a coursework stub',
-
-      'Compose-based UI scalable as adherence features grow',
-
-      'Demonstrates product thinking for time-sensitive, user-trust domains',
-
+      'Built complete Android application using Kotlin and Jetpack Compose',
+      'Implemented Firebase Authentication and cloud synchronization',
+      'Designed medication adherence workflows with reminder automation',
+      'Demonstrated end-to-end mobile product engineering'
     ],
 
     impact: [
@@ -278,7 +272,7 @@ export const projects = [
 
     demo: 'https://github.com/antariksh19/Dozo',
 
-    github: 'https://github.com/antariksh19/Dozo',
+    github: 'https://github.com/antariksh19/Dozo.git',
 
   },
 
@@ -368,7 +362,7 @@ export const projects = [
 
     demo: 'http://waresync.great-site.net/',
 
-    github: '',
+    github: 'https://github.com/antariksh19/WARESYNC.git',
 
   },
 
