@@ -32,19 +32,19 @@ const Contact = ({ personalInfo }) => {
       });
   };
 
-  const ContactLink = ({ href, icon, text }) => (
-    <a href={href} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-400 hover:text-white group transition-colors p-4 bg-white/5 rounded-xl border border-white/5 hover:border-cyan-500/30 hover:bg-white/[0.08] backdrop-blur-sm">
+  const ContactLink = ({ href, icon, text, ariaLabel }) => (
+    <a href={href} target="_blank" rel="noreferrer" aria-label={ariaLabel ?? text} className="flex items-center gap-4 text-slate-400 hover:text-white group transition-colors p-4 bg-white/5 rounded-xl border border-white/5 hover:border-cyan-500/30 hover:bg-white/[0.08] backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500">
       <div className="text-cyan-500 group-hover:scale-110 transition-transform">{icon}</div><span className="font-medium truncate">{text}</span>
     </a>
   );
 
   return (
-    <section id="contact" className="py-24 px-6 border-t border-white/5 bg-[#030303] relative z-10">
+    <section id="contact" className="py-24 px-6 border-t border-white/5 bg-[#030303] relative z-10" aria-labelledby="contact-heading">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-16">
         
         {/* LEFT SIDE: Contact Info */}
         <div>
-          <h2 className="text-4xl font-bold mb-8">Let's <span className="text-cyan-500">Connect.</span></h2>
+          <h2 id="contact-heading" className="text-4xl font-bold mb-8">Let's <span className="text-cyan-500">Connect.</span></h2>
           <p className="text-slate-400 mb-8 text-lg">Looking for new opportunities. My inbox is always open!</p>
           <div className="space-y-4">
             <ContactLink href={`mailto:${personalInfo.email}`} icon={<Mail />} text={personalInfo.email} />
@@ -64,45 +64,49 @@ const Contact = ({ personalInfo }) => {
             
             {/* NAME INPUT */}
             <div>
-              <label className="block text-slate-400 mb-2 text-sm font-medium">Name</label>
-              <input 
-                type="text" 
-                name="user_name"  // Matches {{user_name}} in EmailJS template
-                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none transition-all" 
-                required 
-                placeholder="Your Name" 
+              <label htmlFor="contact-name" className="block text-slate-400 mb-2 text-sm font-medium">Name</label>
+              <input
+                id="contact-name"
+                type="text"
+                name="user_name"
+                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all"
+                required
+                placeholder="Your Name"
+                autoComplete="name"
               />
             </div>
 
-            {/* EMAIL INPUT */}
             <div>
-              <label className="block text-slate-400 mb-2 text-sm font-medium">Email</label>
-              <input 
-                type="email" 
-                name="user_email" // Matches {{user_email}} in EmailJS template
-                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none transition-all" 
-                required 
-                placeholder="john@example.com" 
+              <label htmlFor="contact-email" className="block text-slate-400 mb-2 text-sm font-medium">Email</label>
+              <input
+                id="contact-email"
+                type="email"
+                name="user_email"
+                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all"
+                required
+                placeholder="john@example.com"
+                autoComplete="email"
               />
             </div>
 
-            {/* MESSAGE INPUT */}
             <div>
-              <label className="block text-slate-400 mb-2 text-sm font-medium">Message</label>
-              <textarea 
-                name="message" // Matches {{message}} in EmailJS template
-                rows="4" 
-                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none transition-all" 
-                required 
+              <label htmlFor="contact-message" className="block text-slate-400 mb-2 text-sm font-medium">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                className="w-full bg-black/40 border border-white/10 rounded-lg p-3 text-white focus:border-cyan-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all"
+                required
                 placeholder="Hello Antariksh..."
-              ></textarea>
+              />
             </div>
 
             {/* SUBMIT BUTTON */}
-            <button 
-              type="submit" 
-              disabled={status === 'loading'} 
-              className="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 rounded-lg transition-all flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+            <button
+              type="submit"
+              disabled={status === 'loading'}
+              aria-busy={status === 'loading'}
+              className="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 rounded-lg transition-all flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
             >
               {status === 'loading' ? (
                 <Loader2 className="animate-spin" size={20} />
