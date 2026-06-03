@@ -39,10 +39,12 @@ const Portfolio = () => {
         <Metrics />
         <Skills />
         <Projects />
+        <Highlights />
         <Experience />
+        <AIAssistant />        
         <Contact personalInfo={personalInfo} />
       </main>
-      <AIAssistant />
+      
     </div>
   );
 };

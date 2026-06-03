@@ -8,11 +8,14 @@ import { workExperience, leadership, education, certifications } from '../conten
 import { skillCategories, allTechnologies, cloudExperience } from '../content/skills';
 
 export const SUGGESTED_QUESTIONS = [
-  'Tell me about Antariksh',
-  'What projects has he built?',
-  'Explain STEGANO-VAULT',
-  'What cloud experience does he have?',
-  'What technologies does he know?',
+  "Tell me about Antariksh",
+  "Why should I hire Antariksh?",
+  "What are his strongest projects?",
+  "Explain STEGANO-VAULT",
+  "What cloud experience does he have?",
+  "What technologies does he know?",
+  "Generate a recruiter summary",
+  "What makes Antariksh different from other candidates?"
 ];
 
 const SYSTEM_PROMPT_BASE = `You are Antariksh AI.

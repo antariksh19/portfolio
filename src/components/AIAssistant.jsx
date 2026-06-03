@@ -11,8 +11,8 @@ const FOCUS_RING =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]';
 
 const WELCOME_MESSAGE =
-  "Hi — I'm Antariksh AI. I answer from this portfolio's verified profile, projects, and experience data. Pick a suggestion or ask anything below.";
-
+  "I'm Antariksh AI. Ask me about projects, architecture decisions, cloud infrastructure, AI systems, technical skills, experience, or career goals. I answer using verified portfolio data only.";
+  
 const TypingIndicator = () => (
   <div className="flex items-center gap-1.5 px-4 py-3" role="status" aria-label="Assistant is thinking">
     {[0, 1, 2].map((i) => (
