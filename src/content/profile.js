@@ -45,7 +45,7 @@ export const metrics = {
     suffix: '+',
     label: 'Projects Built',
     shortLabel: 'Projects'
-  }
+  },
   leetcodeProblems: { value: 250, suffix: '+', label: 'LeetCode Problems', shortLabel: 'LeetCode Problems' },
   yearsCoding: { value: 4, suffix: '+', label: 'Years Coding', shortLabel: 'Years Coding' },
   /** Technologies Used — count derived from skills.js at runtime when needed */

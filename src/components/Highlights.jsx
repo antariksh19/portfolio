@@ -6,3 +6,6 @@ const highlights = [
   "Cloud Infrastructure",
   "Mobile Development"
 ];
+
+
+export default Highlights;
