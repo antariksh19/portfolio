@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
+import Highlights from './components/Highlights';
 import Background from './components/Background';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
