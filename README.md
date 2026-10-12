@@ -1,16 +1,45 @@
-# React + Vite
+<div align="center">
+  <img src="public/og-image.png" alt="Portfolio Banner" width="100%">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h1>Antariksh Mohapatra | Developer Portfolio</h1>
 
-Currently, two official plugins are available:
+  <p>A high-performance personal portfolio built to showcase full-stack engineering projects, technical writing, and system architecture.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <a href="https://your-live-portfolio-link.vercel.app"><strong>View Live Site »</strong></a>
+</div>
 
-## React Compiler
+<br/>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Overview
+
+This repository contains the source code for my personal developer portfolio (v2). It goes beyond a simple frontend application by incorporating structured product documentation, a defined design system, and a clear development roadmap.
+
+### 📂 Product Documentation
+Unlike standard portfolios, this project is architected with product management principles. You can explore the engineering and design decisions in the `docs/` directory:
+* **[Product Requirements Document (PRD)](docs/portfolio-v2-prd.md):** The core requirements, user stories, and architectural scope.
+* **[Design System](docs/design-system.md):** The typography, color palettes, and component guidelines ensuring UI consistency across the application[cite: 4].
+* **[Roadmap](docs/roadmap.md):** Future feature implementations and optimization tracking[cite: 4].
+
+## 🛠 System Setup
+
+The project utilizes standard Node.js package management, incorporating customized PostCSS styling and strict ESLint configurations for code quality[cite: 4].
+
+### Prerequisites
+* Node.js (v18+)
+* npm (Configured via the local `.npmrc` file[cite: 4])
+
+### Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/antariksh19/portfolio-v2.git](https://github.com/antariksh19/portfolio-v2.git)
+   cd portfolio-v2
