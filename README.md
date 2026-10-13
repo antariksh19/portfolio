@@ -1,7 +1,5 @@
 <div align="center">
-  
-  <img src="https://raw.githubusercontent.com/antariksh19/portfolio/main/public/og-image.png" alt="Portfolio Banner" width="100%">
-  
+
   <h1>Antariksh Mohapatra | Developer Portfolio</h1>
 
   <p>A high-performance personal portfolio built to showcase full-stack engineering projects, technical writing, and system architecture.</p>
@@ -19,13 +17,14 @@
 </div>
 
 ---
-
+<!--
 ## 🖥️ Application Preview
 
 <div align="center">
-  <!-- Replace this source with your actual recorded GIF -->
+  <!-- Replace this source with your actual recorded GIF --
   <img src="./public/portfolio-demo.gif" alt="Portfolio UI Demo" width="800">
 </div>
+-->
 
 ## 🚀 Overview
 
@@ -43,13 +42,14 @@ Unlike standard portfolios, this project is architected with product management 
 * **Responsive Architecture:** Engineered with Tailwind CSS for seamless scaling and fluid layouts across mobile, tablet, and desktop displays.
 * **Strict Code Quality:** Enforced via modern flat-config ESLint rules to maintain enterprise-level code standards.
 * **Optimized Build Pipeline:** Powered by Vite for lightning-fast Hot Module Replacement (HMR) and highly optimized production bundling.
-
+<!--
 ## ⚡ Performance Metrics
 
-<!-- Replace this with an actual screenshot of your 100/100 Lighthouse score -->
+<!-- Replace this with an actual screenshot of your 100/100 Lighthouse score --
 <div align="center">
   <img src="./public/lighthouse-score.png" alt="Lighthouse Performance Score" width="600">
 </div>
+-->
 
 ## 📂 Project Structure
 
