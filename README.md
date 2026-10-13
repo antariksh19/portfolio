@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/og-image.png" alt="Portfolio Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/antariksh19/portfolio/main/public/og-image.png" alt="Portfolio Banner" width="100%">
 
   <h1>Antariksh Mohapatra | Developer Portfolio</h1>
 
