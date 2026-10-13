@@ -4,7 +4,7 @@
 
   <p>A high-performance personal portfolio built to showcase full-stack engineering projects, technical writing, and system architecture.</p>
 
-  <h3>🟢 <a href="[https://your-live-portfolio-link.vercel.app](https://antariksh-portfolio.vercel.app/)">Live Deployment Available Here</a></h3>
+  <h3>🟢 <a href="https://antariksh-portfolio.vercel.app/">Live Deployment Available Here</a></h3>
 </div>
 
 <br/>
