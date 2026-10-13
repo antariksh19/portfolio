@@ -81,7 +81,7 @@ The project utilizes standard Node.js package management, incorporating customiz
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/antariksh19/portfolio.git](https://github.com/antariksh19/portfolio.git)
+git clone https://github.com/antariksh19/portfolio.git
 cd portfolio
 ```
 
